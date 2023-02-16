@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var salario = parseInt(prompt("Por favor ingrese el salario actual del empleado"))
+       var Nota    = parseInt(prompt("Por favor ingrese la nota del empleado en escala de 1 a 3, siendo 1 deficiente, 2 bueno, 3 excelente")) 
+
+            if(Nota == 1){
+                aumento = salario * 1.015
+                porcentaje  = 1.5
+
+            }else if(Nota == 2){
+                aumento = salario * 1.035
+                porcentaje = 3.5
+
+            }else if(Nota == 3){
+                aumento = salario * 1.055
+                porcentaje = 5.5
+            }
+        document.write("su aumento es de: " +porcentaje+ "%"+"</br> Su nuevo salario es de: " +aumento)
+    </script>
+</body>
+</html>

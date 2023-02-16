@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas Jumaga</title>
+</head>
+<body>
+    <script>
+        alert("Hola, Bienvenido a pizzas Jumaga. En la siguiente ventana ingrese su pedido por favor")
+            var orden = (prompt("Dijite la pizza que desea ordenar (sencilla = $ 20, doble = $ 25 ,triple = $ 30)" ));
+
+            var sencilla = 20
+            var doble    = 25
+            var triple   = 30
+
+         alert("tenga en cueta que el metodo de pago con tarjeta genera un cargo de cobro adicional del 5% en su producto a pedir, y el pago en efectivo no genera cargo de cobro adicional.");
+
+             var metodo_pago = (prompt("ingrese su metodo de pago efectivo o tarjeta"))
+
+        if(orden == "sencilla" && metodo_pago == "efectivo"){
+            document.write("el costo de su pizza es de: " + sencilla)
+        }else if(orden == "sencilla" && metodo_pago == "tarjeta"){
+            valor_total = sencilla * 1.05; 
+            document.write("el costo de su pizza es de: " + valor_total)
+        }else if(orden == "doble" && metodo_pago == "efectivo"){
+            document.write("el costo de su pizza es de: " + doble)
+        }else if(orden == "doble" && metodo_pago == "tarjeta"){
+            valor_total = doble * 1.05;
+            document.write("el costo de su pizza es de: "+ valor_total)
+        }else if(orden == "triple" && metodo_pago == "efectivo"){
+            document.write("el costo de su pizza es de: "+ triple)
+        }else if(orden == "triple" && metodo_pago == "tarjeta"){
+            valor_total = triple * 1.05;
+            document.write("el costo de su pizza es de: "+ valor_total)
+        }
+        
+    </script>
+</body>
+</html>
